@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import GlobalStyle from "@/global-style";
-
+import TabBar from "@/layouts/tab-bar";
 
 
 export const metadata: Metadata = {
@@ -18,6 +18,7 @@ export default function RootLayout({
     <GlobalStyle/>
       <body>
         {children}
+        <TabBar/>
       </body>
     </html>
   );
